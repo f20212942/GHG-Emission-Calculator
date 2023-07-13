@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme=dark>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/pic1.png">
+    <title>Green House Emission Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./img/pic1.png" alt="GHG Emission Report" height="30" style="padding-left: 10px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">GHG Emission Calculator</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./disclaimer.html">Disclaimer</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./Sources.html">Sources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./report.html">Report</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Definitions</h1>
+  <div style="display: flex; flex-direction: column; align-items: center; margin: 3% 3% 3% 3%;">
+    <p style="text-align: center;">Scope 1 (direct emissions) emissions are those from activities owned or controlled by your organisation. Examples of Scope 1 emissions include emissions from combustion in owned or controlled boilers, furnaces, and vehicles; and emissions from chemical production in owned or controlled process equipment. (Defra, 2020)</p>
+    <p style="text-align: center;">Scope 2 (energy indirect) emissions are those released into the atmosphere that are associated with your consumption of purchased electricity, heat, steam, and cooling. These indirect emissions are a consequence of your organisation’s energy use but occur at sources you do not own or control. (Defra, 2020)</p>
+    <p style="text-align: center;">Scope 3 (other indirect) emissions are a consequence of your actions that occur at sources you do not own or control and are not classified as Scope 2 emissions. Examples of Scope 3 emissions are business travel by means not owned or controlled by your organisation, waste disposal, and materials or fuels your organisation purchases. Deciding if emissions from a vehicle, office, or factory that you use are Scope 1 or Scope 3 may depend on how you define your operational boundaries. Scope 3 emissions can be from activities that are upstream or downstream of your organisation. (Defra, 2020)</p>
+  </div>
+  
+  
+
+
+  <div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th colspan="5" class="text-center">General information, sources and assumptions</th>
+      </tr>
+      <tr>
+        <th class="text-center">Scope</th>
+        <th class="text-center">Tab</th>
+        <th class="text-center">Activity</th>
+        <th class="text-center">Source</th>
+        <th class="text-center">Assumptions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-center" colspan="1">Scope 1</td>
+        <td class="text-center">Fuels</td>
+        <td class="text-center" st>Fuels</td>
+        <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+        <td class="text-center">Full set of factors for kg CO2e from DEFRA 2021</td>
+      </tr>
+      <tr>
+        <td class="text-center">Scope 1</td>
+        <td class="text-center">Bioenergy</td>
+        <td class="text-center">Bioenergy</td>
+        <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+        <td class="text-center">Full set of factors for kg CO2e from DEFRA 2021</td>
+      </tr>
+      <tr>
+        <td class="text-center">Scope 1</td>
+        <td class="text-center">Refrigerants</td>
+        <td class="text-center">Refrigerants</td>
+        <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+        <td class="text-center">Full set of factors for kg CO2e from DEFRA 2021</td>
+      </tr>
+      <tr>
+        <td class="text-center">Scope 1 & 2</td>
+        <td class="text-center">Owned vehicles</td>
+        <td class="text-center">Cars and  motorbikes</td>
+        <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+        <td class="text-center">"Battery Electric cars: DEFRA Electricity EF for EVs/ GEF UK * Country specific IFI GEF 2021
+          Hybrids Plug-in Hybrid Electric cars: DEFRA Electricity EF for EVs/ GEF UK * Country specific IFI GEF 2021 (portion of emissions correspondent to fuel is considered in scope 1 and electricity is consired in scope 2)
+          Other vehicles: Full set of factors for kg CO2e from DEFRA 2021"</td>
+      </tr>
+      <tr>
+        <td class="text-center">Scope 1</td>
+        <td class="text-center">Owned vehicles</td>
+        <td class="text-center">Vans and HGVs</td>
+        <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+        <td class="text-center">"Battery Electric cars: DEFRA Electricity EF for EVs/ GEF UK * Country specific IFI GEF 2021
+          Other vehicles: Full set of factors for kg CO2e from DEFRA 2021"</td>
+      </tr>
+      <tr>
+        <td class="text-center">Scope 2</td>
+        <td class="text-center">Electricity and Heat</td>
+        <td class="text-center">Electricity</td>
+        <td class="text-center"><a href="https://unfccc.int/climate-action/sectoral-engagement/ifis-harmonization-of-standards-for-ghg-accounting/ifi-twg-list-of-methodologies">IFI 2021 Harmonized Grid Emission factor (GEF) data set</a></td>
+        <td class="text-center">"For Palestine: Average EF of Iraq, Jordan, Lebanon, Syrian Arab Republic, Turkey. For Holy See: Italy EF; Western Sahara: Average EF of Algeria, Mali, Mauritania, Morocco, Senegal. For Åland Islands
+          Antarctica, Bonaire, Sint Eustatius and Saba, Bouvet Island, British Indian Ocean Territory, China, Macao Special Administrative Region, Christmas Island, Cocos (Keeling) Islands, French Southern Territories, Guernsey, Heard Island and McDonald Islands, Jersey, Norfolk Island, Pitcairn, Saint Barthélemy, Sark, South Georgia and the South Sandwich Islands, Svalbard and Jan Mayen Islands, Tokelau, United States Minor Outlying Islands, Wallis and Futuna Islands: Average of  American Samoa, Antigua and Barbuda, Aruba, Bahamas, Barbados, Bermuda, British Virgin Islands, Cayman Islands, Cook Islands, Falkland Islands (Malvinas), Faroe Islands, Fiji, French Polynesia, Guadeloupe, Guam, Malta, Marshall Islands, Martinique,   Mauritius, Northern Mariana Islands, Réunion, Saint Helena, Saint Kitts and Nevis, Saint Martin (French Part), Saint Pierre and Miquelon, Saint Vincent and the Grenadines, Seychelles, Sint Maarten (Dutch part), Solomon Islands, Turks and Caicos Islands, Tuvalu, United States Virgin Islands, Vanuatu,."</td>
+      </tr>
+      <tr>
+        <td class="text-center">Scope 2</td>
+        <td class="text-center">Electricity and Heat</td>
+        <td class="text-center">Heat and steam</td>
+        <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+        <td class="text-center">Full set of factors for kg CO2e from DEFRA 2021</td>
+      </tr>
+      <tr>
+        <td class="text-center">Scope 2</td>
+        <td class="text-center">Electricity and Heat</td>
+        <td class="text-center">District cooling</td>
+        <td class="text-center"><a href="https://www.gord.qa/admin/Content/Link2492019122324.pdf">GSAS SEER TOOL v2.0</a></td>
+        <td class="text-center">Distric cooling maximum average  x country-based Grid Emission Factor (IFI Harmonized Grid Emission factor (GEF) data set 2021).</td>
+      </tr>
+      <tr>
+        <td class="text-center">Scope 3</td>
+        <td class="text-center">WTT fuels</td>
+        <td class="text-center">Well to tank fuels</td>
+        <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+        <td class="text-center">Full set of factors for kg CO2e from DEFRA 2021</td>
+      </tr>
+      <tr>
+        <td class="text-center">Scope 3</td>
+        <td class="text-center">T&D (Data for UK)</td>
+        <td class="text-center">Transmission and distribution losses</td>
+        <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+        <td class="text-center">Full set of factors for kg CO2e from DEFRA 2021</td>
+      </tr>
+      <tr>
+        <td class="text-center">Scope 3</td>
+        <td class="text-center">Water</td>
+        <td class="text-center">Water suply and treatment</td>
+        <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+        <td class="text-center">Full set of factors for kg CO2e from DEFRA 2021</td>
+      </tr>
+      <td class="text-center">Scope 3</td>
+      <td class="text-center">Material use</td>
+      <td class="text-center">Primary material production</td>
+      <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+      <td class="text-center">Primary material production</td>
+      </tr>
+    <tr>
+      <td class="text-center">Scope 3</td>
+      <td class="text-center">Waste</td>
+      <td class="text-center">Landfill disposal</td>
+      <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+      <td class="text-center">Factors for landfill DEFRA 2021</td>
+    </tr>
+    <tr>
+      <td class="text-center">Scope 3</td>
+      <td class="text-center">Flight and Hotel</td>
+      <td class="text-center">Flights</td>
+      <td class="text-center"><a href="https://www.icao.int/environmental-protection/CarbonOffset/Pages/default.aspx">Use of ICAO aviation carbon emissions calculator is recommended</a></td>
+      <td class="text-center">In case you need to calculate many flights, the UNFCCC secretariat may support through the use of proxies. RFI value of 1 is applied.</td>
+    </tr>
+      <td class="text-center">Scope 3</td>
+      <td class="text-center">Flight and Hotel</td>
+      <td class="text-center">Hotels</td>
+      <td class="text-center"><a href="https://greenview.sg/chsb-index/">2020 Cornell Hotel Sustainability Benchmarking Index</a></td>
+      <td class="text-center">Hotel Carbon Footprint Per Occupied Room | All hotels upper quartile emission factor value</td>
+    </tr>
+    <tr>
+      <td class="text-center">Scope 3</td>
+      <td class="text-center">Business travel land and sea</td>
+      <td class="text-center">Sea</td>
+      <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+      <td class="text-center">Full set of factors for kg CO2e from DEFRA 2021</td>
+    </tr>
+    <tr>
+      <td class="text-center">Scope 3</td>
+      <td class="text-center">Business travel land and sea</td>
+      <td class="text-center">Land</td>
+      <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+      <td class="text-center">Full set of factors for kg CO2e from DEFRA 2021</td>
+    </tr>
+      <td class="text-center">Scope 3</td>
+      <td class="text-center">Freighting goods</td>
+      <td class="text-center">Vans, HGVs, cargo ship, freight flights, rail and sea tanker</td>
+      <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+      <td class="text-center">Freight flights with RFI value of 1. For HGVs, average laden values were used.</td>
+    </tr>
+    <tr>
+        <td class="text-center">Scope 3</td>
+        <td class="text-center">Employees commuting</td>
+        <td class="text-center">Cars, taxis, bus, rail</td>
+        <td class="text-center"><a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020">UK Government GHG Conversion Factors for Company Reporting</a></td>
+        <td class="text-center">Full set of factors for kg CO2e from DEFRA 2021</td>
+    </tr>
+    <tr>
+        <td class="text-center">Scope 3</td>
+        <td class="text-center">Food</td>
+        <td class="text-center">Food</td>
+        <td class="text-center"><a href="https://stillmedab.olympic.org/media/Document%20Library/OlympicOrg/IOC/What-We-Do/celebrate-olympic-games/Sustainability/IOC-Carbon-Footprint-Methodology.pdf">Carbon footprint methodology for the Olympic Games</a></td>
+        <td class="text-center">Emission factors from the International Olympic Committee and value for average vegan meal based on average diet values for Germany from FAO.</td>
+    </tr>
+    <tr>
+        <td class="text-center">Scope 3</td>
+        <td class="text-center">Home office</td>
+        <td class="text-center">Home office</td>
+        <td class="text-center"><a href="https://info.eco-act.com/en/homeworking-emissions-whitepaper-2020">EcoAct Homeworking emissions whitepaper</a></td>
+        <td class="text-center">Home office energy consumption. 'With heating': workstation, lighting and heating. 'With cooling': workstation, lighting and cooling. 'No heating, no cooling': workstation and lighting. The consumption is multiplied times the country-based Grid Emission Factor (IFI Harmonized Grid Emission factor (GEF) data set).</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">GHG Emission Calculator</a></li>
+          <li class="nav-item"><a href="./disclaimer.html" class="nav-link px-2 text-body-secondary">Disclaimer</a></li>
+          <li class="nav-item"><a href="./Sources.html" class="nav-link px-2 text-body-secondary">Source</a></li>
+          <li class="nav-item"><a href="./report.html" class="nav-link px-2 text-body-secondary">Report</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+      </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

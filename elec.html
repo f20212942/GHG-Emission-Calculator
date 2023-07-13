@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme=dark>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/pic1.png">
+    <title>Electricity,heat,cooling,T&D</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+
+
+    h1 {
+      text-align: center;
+      padding-top: 3%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    tbody td:nth-child(2),
+    tbody td:nth-child(3),
+    tbody td:nth-child(4),
+    tbody td:nth-child(5) {
+      text-align: center;
+    }
+
+    tbody td:nth-child(6) input {
+      width: 80px;
+      text-align: right;
+    }
+
+    .highlight {
+      background-color: #6b6a6a;
+    }
+
+    .total-row td {
+      font-weight: bold;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+  </style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./img/pic1.png" alt="GHG Emission Report" height="30" style="padding-left: 10px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">GHG Emission Calculator</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./disclaimer.html">Disclaimer</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./Sources.html">Sources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./report.html">Report</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <h1>Electricity, heating, transmission and distribution losses, district cooling</h1>
+
+      <div style="display: flex; flex-direction: column; align-items: center; margin: 2% 2% 2% 2%;">
+        <p>
+          Market-based emissions from the generation of purchased electricity, heat, steam or cooling.
+          <p>
+          T&D: Emissions associated with grid losses (the energy loss that occurs in getting the electricity from the power plant to your organisation)
+          </p>
+        </p>
+      </div>
+
+<div class="container" style="display: flex; justify-content: center; margin-top: 4%;">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="9" class="text-center">Electricity Grid</th>
+          </tr>
+          <tr>
+            <th colspan="9" class="text-center">Electricity used by an organisation at sites owned/controlled by them. For renewable energy contracts, the emissios are equal to zero</th>
+          </tr>
+          <tr>
+            <th>Activity</th>
+            <th>Country</th>
+            <th>Units</th>
+            <th>GEF Factors KgCO2</th>
+            <th>T&D Factors KgCO2</th>
+            <th>Renewable energy contract (Yes/No)</th>
+            <th>Amount</th>
+            <th>GEF kg CO2e</th>
+            <th>T&D kg CO2e</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Electricity</td>
+            <td></td>
+            <td class="text-center">kWh</td>
+            <td class="text-center"></td>
+            <td class="text-center">0.0188</td>
+            <td class="text-center"></td>
+            <td class="text-right"><input type="text" value=""></td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+          </tr>
+          
+          <tr>
+            <td>Electricity</td>
+            <td>Or enter your own emission factor value in E10 and F10</td>
+            <td class="text-center">kWh</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"><input type="text" value=""></td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="container" style="display: flex; justify-content: center; margin-top: 4%;">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="8" class="text-center">Heat and Steam</th>
+          </tr>
+          <tr>
+            <th colspan="8" class="text-center">Emission within organisation that purchase heat/steam energy for heating purposes or for use in specific industrial.</th>
+          </tr>
+          <tr>
+            <th>Activity</th>
+            <th>Type</th>
+            <th>Units</th>
+            <th>Factors</th>
+            <th>T&D Factors</th>
+            <th>Amount</th>
+            <th>kg CO2e</th>
+            <th>T&D kg CO2e</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Heat and Steam</td>
+            <td>District heat and steam</td>
+            <td class="text-center">kWh</td>
+            <td class="text-center">0.1707</td>
+            <td class="text-center">0.0090</td>
+            <td class="text-center"><input type="text" value=""></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+          <tr>
+            <td colspan="8" class="text-center">For heating from other sources, please use the tab 'Fuels'</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container" style="display: flex; justify-content: center; margin-top: 4%;">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="6" class="text-center">District cooling</th>
+          </tr>
+          <tr>
+            <th colspan="6" class="text-center">Air conditioning from chilled water within a centralized energy plant and underground pipes distribution.</th>
+          </tr>
+          <tr>
+            <th>Activity</th>
+            <th>Country</th>
+            <th>Units</th>
+            <th>Factors</th>
+            <th>Amount</th>
+            <th>kg CO2e</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>District cooling</td>
+            <td></td>
+            <td class="text-center">Ton of refrigeration</td>
+            <td class="text-center"></td>
+            <td class="text-center"><input type="text" value=""></td>
+            <td class="text-right"></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="d-grid gap-4 d-sm-flex justify-content-sm-center mb-5" style="display: flex; justify-content: center;">
+        <a href="./select.html"></a><button type="button" class="btn btn-outline-secondary" style="margin-top: 30px;">Back</button></a>
+        <a href="./select.html"></a><button type="button" class="btn btn-outline-secondary" style="margin-top: 30px;">Next</button></a>
+      </div>
+
+    
+
+
+      <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">GHG Emission Calculator</a></li>
+              <li class="nav-item"><a href="./disclaimer.html" class="nav-link px-2 text-body-secondary">Disclaimer</a></li>
+              <li class="nav-item"><a href="./Sources.html" class="nav-link px-2 text-body-secondary">Source</a></li>
+              <li class="nav-item"><a href="./report.html" class="nav-link px-2 text-body-secondary">Report</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+          </footer>
+      </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

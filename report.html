@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/pic1.png">
+  <title>Green House Emission Report</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.16/jspdf.plugin.autotable.min.js"></script>
+  <script type="text/javascript" src="report.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./img/pic1.png" alt="GHG Emission Report" height="30" style="padding-left: 10px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">GHG Emission Calculator</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./disclaimer.html">Disclaimer</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./Sources.html">Sources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./report.html">Report</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 style="text-align: center; padding-top: 3%;"><span id="organisation-report"></span> - <span id="period"></span> - GHG Emissions Report</h2>
+    <table class="table table-bordered table-responsive-lg" id="myReport">
+      <thead>
+        <tr>
+          <th colspan="2" class="text-center">Category</th>
+          <th colspan="2" class="text-center">Emission source category</th>
+          <th>t CO2e</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="26" class="text-center"> GHG Protocol Standards: Corporate Scope - 1 and 2, Value Chain - Scope 3</td>
+          <td rowspan="6">Scope 1</td>
+          <td rowspan="3">Direct emissions arising from owned or controlled stationary sources that use fossil fuels and/or emit fugitive emissions</td>
+          <td>Fuels</td>
+          <td><span id="fuel-total" /></td>
+        </tr>
+        <tr>
+          <td>Bioenergy</td>
+          <td><span id="bioenergy-total" /></td>
+        </tr>̦
+        <tr>
+          <td>Refrigerants</td>
+          <td><span id="refrigerants-total" /></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Direct emissions from owned or controlled mobile sources</td>
+          <td>Passenger vehicles</td>
+          <td><span id="passenger-total" /></td>
+        </tr>
+        <tr>
+          <td>Delivery vehicles</td>
+          <td><span id="delivery-total" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text-center">Total Scope 1</td>
+          <td><span id="scope1-total" /></td>
+        </tr>
+        <tr>
+          <td rowspan="5">Scope 2</td>
+          <td rowspan="4">Location-based emissions from the generation of purchased electricity, heat, steam, or cooling</td>
+          <td>Electricity</td>
+          <td><span id="electricity-total" /></td>
+        </tr>
+        <tr>
+          <td>Heat and steam</td>
+          <td><span id="heat-total" /></td>
+        </tr>
+        <tr>
+          <td>Electricity for EVs</td>
+          <td><span id="ev-total" /></td>
+        </tr>
+        <tr>
+          <td>District cooling</td>
+          <td><span id="district-total" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text-center">Total Scope 2</td>
+          <td><span id="scope2-total" /></td>
+        </tr>
+        <tr>
+          <td rowspan="15">Scope 3</td>
+          <td rowspan="2">Fuel- and energy-related activities</td>
+          <td>All other fuel- and energy-related activities</td>
+          <td><span id="otherfuel-total" /></td>
+        </tr>
+        <tr>
+          <td>Transmission and distribution losses</td>
+          <td><span id="transmission-total" /></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Waste generated in operations</td>
+          <td>Waste water</td>
+          <td><span id="wastewater-total" /></td>
+        </tr>
+        <tr>
+          <td>Waste</td>
+          <td><span id="waste-total" /></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Purchased goods</td>
+          <td>Water supplied</td>
+          <td><span id="water-total" /></td>
+        </tr>
+        <tr>
+          <td>Material use</td>
+          <td><span id="material-total" /></td>
+        </tr>
+        <tr>
+          <td rowspan="4">Business travel</td>
+          <td>All transportation by air</td>
+          <td><span id="air-total" /></td>
+        </tr>
+        <tr>
+          <td>Emissions arising from hotel accommodation associated with business travel</td>
+          <td><span id="business-total" /></td>
+        </tr>
+        <tr>
+          <td>All transportation by sea</td>
+          <td><span id="sea-total" /></td>
+        </tr>
+        <tr>
+          <td>All transportation by land, public transport, rented/leased vehicle, and taxi</td>
+          <td><span id="road-total" /></td>
+        </tr>
+        <tr>
+          <td>Upstream transportation and distribution</td>
+          <td>Freighting goods</td>
+          <td><span id="freighting-total" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">Employees commuting</td>
+          <td><span id="employees-total" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">Food</td>
+          <td><span id="food-total" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">Home office</td>
+          <td><span id="home-total" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">Total Scope 3</td>
+          <td><span id="scope3-total" /></td>
+        </tr>
+        <tr>
+          <td colspan="4" class="text-center">Total Emissions</td>
+          <td><span id="emission-total" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="display: flex; justify-content: center;">
+    <form>
+      <button type="button" class="btn btn-outline-secondary" style="margin-top: 10px;" id="downloadBtnPdf">Download PDF</button>
+      <!-- <button type="button" class="btn btn-outline-secondary" style="margin-top: 10px;" id="downloadBtnCsv">Download CSV</button> -->
+    </form>
+  </div>
+
+
+  <div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">GHG Emission Calculator</a></li>
+          <li class="nav-item"><a href="./disclaimer.html" class="nav-link px-2 text-body-secondary">Disclaimer</a></li>
+          <li class="nav-item"><a href="./Sources.html" class="nav-link px-2 text-body-secondary">Source</a></li>
+          <li class="nav-item"><a href="./report.html" class="nav-link px-2 text-body-secondary">Report</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+      </footer>
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.16/jspdf.plugin.autotable.min.js"></script>
+<script type="text/javascript">
+// Function to generate PDF
+function generatePDF() {
+  // Hide the buttons temporarily to exclude them from the PDF
+  const downloadBtnPdf = document.getElementById("downloadBtnPdf");
+  // const downloadBtnCsv = document.getElementById("downloadBtnCsv");
+  downloadBtnPdf.style.display = "none";
+  // downloadBtnCsv.style.display = "none";
+ 
+  // Use window.print() to open the print dialog
+  window.print();
+ 
+  // Restore the visibility of the buttons
+  downloadBtnPdf.style.display = "inline-block";
+  // downloadBtnCsv.style.display = "inline-block";
+   }
+ 
+// Function to generate CSV
+function generateCSV() {
+  // CSV generation code (same as before)
+  // ...
+   }
+ 
+// Attach click event listeners to the buttons
+document.getElementById("downloadBtnPdf").addEventListener("click", generatePDF);
+// document.getElementById("downloadBtnCsv").addEventListener("click", generateCSV);
+</script>
+</body>
+</html>

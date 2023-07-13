@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme=dark>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/pic1.png">
+    <title>Food Consumption</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./img/pic1.png" alt="GHG Emission Report" height="30" style="padding-left: 10px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">GHG Emission Calculator</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./disclaimer.html">Disclaimer</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./Sources.html">Sources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./report.html">Report</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <h1>Food Consumption</h1>
+      <div style="display: flex; flex-direction: column; align-items: center; margin: 3% 3% 3% 3%;">
+      <p>
+        Food provided by the organisation to be consumbed by the employees (e.g. canteens).
+      </p>
+    </div>
+
+      <div class="container" style="display: flex; justify-content: center; margin-top: 20px;">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="5" class="text-center">Please enter the amount for each applicable refrigerant</th>
+            </tr>
+            <tr>
+              <th class="text-center">Vehicle</th>
+              <th class="text-center">Unit</th>
+              <th class="text-center">Factors</th>
+              <th class="text-center">Amount (Kg)</th>
+              <th class="text-center">Kg CO2e</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr>
+                  <td class="text-center">1standard breakfast</td>
+                  <td class="text-center">breakfast</td>
+                  <td class="text-center">0.84</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">1gourmet breakfast</td>
+                  <td class="text-center">breakfast</td>
+                  <td class="text-center">2.33</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">1cold or hot snack</td>
+                  <td class="text-center">hot snack</td>
+                  <td class="text-center">2.02</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">1average meal</td>
+                  <td class="text-center">meal</td>
+                  <td class="text-center">4.70</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">Non-alcoholic beverage</td>
+                  <td class="text-center">litre</td>
+                  <td class="text-center">0.20</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">Alcoholic beverage</td>
+                  <td class="text-center">litre</td>
+                  <td class="text-center">1.87</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">1hot snack (burger+ trites)</td>
+                  <td class="text-center">hot snack</td>
+                  <td class="text-center">2.77</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">1sandwich</td>
+                  <td class="text-center">sandwich</td>
+                  <td class="text-center">1.27</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">Meal,vegan</td>
+                  <td class="text-center">meal</td>
+                  <td class="text-center">1.69</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">Meal,vegetarian</td>
+                  <td class="text-center">meal</td>
+                  <td class="text-center">2.85</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">Mea I,with beef</td>
+                  <td class="text-center">meal</td>
+                  <td class="text-center">6.93</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">Meal,with chicken</td>
+                  <td class="text-center">meal</td>
+                  <td class="text-center">3.39</td>
+                  <td class="text-center"><input type="text" value=""></td>
+                  <td class="text-center"></td>
+                </tr>
+
+          <tr class="total-row">
+            <td class="text-right" colspan="4">Total:</td>
+            <td class="text-right" id="foodTotal"></td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+          <div class="d-grid gap-4 d-sm-flex justify-content-sm-center mb-5" style="display: flex; justify-content: center;">
+            <a href="./select.html"><button type="button" class="btn btn-outline-secondary" style="margin-top: 30px;">Back</button></a>
+            <a href="./select.html"><button type="button" class="btn btn-outline-secondary" style="margin-top: 30px;" onclick="handleFood()">Next</button></a>
+          </div>
+    
+          <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                  <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">GHG Emission Calculator</a></li>
+                  <li class="nav-item"><a href="./disclaimer.html" class="nav-link px-2 text-body-secondary">Disclaimer</a></li>
+                  <li class="nav-item"><a href="./Sources.html" class="nav-link px-2 text-body-secondary">Source</a></li>
+                  <li class="nav-item"><a href="./report.html" class="nav-link px-2 text-body-secondary">Report</a></li>
+                </ul>
+                <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+              </footer>
+          </div>
+
+      <script>
+function handleFood() {
+const foodTotal = document.getElementById('foodTotal').textContent;
+
+localStorage.setItem("foodTotal", foodTotal);
+}
+
+
+
+//
+    function calculateCO2() {
+      var rows = document.querySelectorAll('tbody tr:not(.total-row)');
+      var totalCO2 = 0;
+    
+      for (var i = 0; i < rows.length; i++) {
+        var amountInput = rows[i].querySelector('input');
+        var factorCell = rows[i].querySelector('td:nth-child(3)');
+        var KgCO2Cell = rows[i].querySelector('td:nth-child(5)');
+        var amount = parseFloat(amountInput.value);
+        var factor = parseFloat(factorCell.textContent);
+    
+        if (!isNaN(amount) && !isNaN(factor)) {
+          var co2 = (amount * factor).toFixed(3);
+          KgCO2Cell.textContent = co2;
+          totalCO2 += parseFloat(co2);
+        } else {
+          KgCO2Cell.textContent = '';
+        }
+      }
+    
+      var totalCO2Cell = document.querySelector('.total-row td:last-child');
+      totalCO2Cell.textContent = totalCO2.toFixed(3);
+    }
+    
+    // Attach event listener to trigger calculation on input change
+    var amountInputs = document.querySelectorAll('tbody input');
+    for (var i = 0; i < amountInputs.length; i++) {
+      amountInputs[i].addEventListener('input', calculateCO2);
+    }
+    
+    // Initial calculation on page load
+    calculateCO2();
+    
+    
+    // Highlight row on input focus
+    function highlightRow(event) {
+          var row = event.target.parentNode.parentNode;
+          row.classList.toggle('highlight');
+        }
+    
+        // Add event listeners to input fields
+        var inputs = document.querySelectorAll('tbody input');
+        for (var i = 0; i < inputs.length; i++) {
+          inputs[i].addEventListener('focus', highlightRow);
+          inputs[i].addEventListener('blur', highlightRow);
+          inputs[i].addEventListener('input', calculateTotal);
+        }
+      </script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+    </html>

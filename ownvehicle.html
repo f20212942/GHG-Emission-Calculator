@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/pic1.png">
+  <title>Fuels</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./img/pic1.png" alt="GHG Emission Report" height="30" style="padding-left: 10px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">GHG Emission Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./disclaimer.html">Disclaimer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Sources.html">Sources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./report.html">Report</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Owned or controlled vehicles</h1>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin: 3% 3% 3% 3%;">
+    <p>
+      Travel in cars and on motorcycles owned or controlled by the reporting organization. This does not include vehicles owned by employees that are used for business purposes.
+    </p>
+    <p>
+      Please make sure that you filled in your country on the tab "Your organization," as some emission factors are country-based.
+    </p>
+    <p>
+      Care should be taken to avoid double counting with an organization's general electricity consumption for the plug-in hybrid electric and battery electric.
+    </p>
+  </div>
+
+  <div class="container" style="display: flex; justify-content: center; margin-top: 20px;">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="9" class="text-center">Please enter the total distance for each type of vehicle</th>
+        </tr>
+        <tr>
+          <th class="text-center">Level 1</th>
+          <th class="text-center">Level 2</th>
+          <th class="text-center">Level 3</th>
+          <th class="text-center">Fuel</th>
+          <th class="text-center">Unit</th>
+          <th class="text-center">Factor fuel</th>
+          <th class="text-center">Factor EV</th>
+          <th class="text-center">Distance (km)</th>
+          <th class="text-center">CO2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Smallcar</td>
+          <td class="text-center">Plug-in Hybrid Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.022</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Smallcar</td>
+          <td class="text-center">Plug·in Hybrid Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.022</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Smallcar</td>
+          <td class="text-center">Battery Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Medium car</td>
+          <td class="text-center">Plug·in Hybrid Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.069</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Medium car</td>
+          <td class="text-center">Battery Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Large car</td>
+          <td class="text-center">Plug·in Hybrid Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.077</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Large car</td>
+          <td class="text-center">Battery Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Averagecar</td>
+          <td class="text-center">Plug·in Hybrid Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.071</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Averagecar</td>
+          <td class="text-center">Battery Ele<tricVehicle</th>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Smallcar</td>
+          <td class="text-center">Diesel</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.138</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Smallcar</td>
+          <td class="text-center">Petrol</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.149</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Smallcar</td>
+          <td class="text-center">Hybrid</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.105</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Smallcar</td>
+          <td class="text-center">Unknown</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.145</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Medium car</td>
+          <td class="text-center">Diesel</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.165</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Medium car</td>
+          <td class="text-center">Petrol</td>
+          <th class="text-center">km</th>
+          <td class="text-center">0.188</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Medium car</td>
+          <td class="text-center">Hybrid</td>
+          <th class="text-center">km</th>
+          <td class="text-center">0.110</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Medium car</td>
+          <td class="text-center">CNG</td>
+          <th class="text-center">km</th>
+          <td class="text-center">0.159</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Medium car</td>
+          <td class="text-center">LPG</td>
+          <th class="text-center">km</th>
+          <td class="text-center">0.179</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">cars(by size)</td>
+          <td class="text-center">Medium car</td>
+          <td class="text-center">Unknown</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.176</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Large car</td>
+          <td class="text-center">Diesel</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.207</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Large car</td>
+          <td class="text-center">Petrol</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.279</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Large car</td>
+          <td class="text-center">Hybrid</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.152</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Large car</td>
+          <td class="text-center">CNG</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.236</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Large car</td>
+          <td class="text-center">LPG</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.266</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Large car</td>
+          <td class="text-center">Unknown</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.226</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Average car</td>
+          <td class="text-center">Diesel</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.168</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Average car</td>
+          <td class="text-center">Petrol</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.174</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Average car</td>
+          <td class="text-center">Hybrid</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.120</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Average car</td>
+          <td class="text-center">CNG</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.176</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Average car</td>
+          <td class="text-center">LPG</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.198</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Cars (by size)</td>
+          <td class="text-center">Average car</td>
+          <td class="text-center">Unknown</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.171</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Motorbike</td>
+          <td class="text-center">Small</td>
+          <td class="text-center"></td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.083</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Motorbike</td>
+          <td class="text-center">Medium</td>
+          <td class="text-center"></td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.101</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Motorbike</td>
+          <td class="text-center">Large</td>
+          <td class="text-center"></td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.132</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Passenger vehicle</td>
+          <td class="text-center">Motorbike</td>
+          <td class="text-center">Average</td>
+          <td class="text-center"></td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.114</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicles</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class I (up to 0.305 tonnes)</td>
+          <td class="text-center">Battery Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicles</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class II (0.305 to 1.74 tonnes)</td>
+          <td class="text-center">Battery Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicles</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class III (1.74 to 3.5 tonnes)</td>
+          <td class="text-center">Battery Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicles</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Average (up to 3.5 tonnes)</td>
+          <td class="text-center">Battery Electric Vehicle</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicles</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class I (up to 0.305 tonnes)</td>
+          <td class="text-center">Diesel</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.147</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicles</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class I (up to 0.305 tonnes)</td>
+          <td class="text-center">Petrol</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.200</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicles</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class I (up to 0.305 tonnes)</td>
+          <td class="text-center">CNG</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicles</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class I (up to 0.305 tonnes)</td>
+          <td class="text-center">LPG</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class I (upto 0.305 tonnes)</td>
+          <td class="text-center">Unknown</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class II (0.305 to 1.74 tonnes)</td>
+          <td class="text-center">Diesel</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.183</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class II (0.305 to 1.74 tonnes)</td>
+          <td class="text-center">Petrol</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.198</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class II (0.305 to 1.74 tonnes)</td>
+          <td class="text-center">CNG</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class II (0.305 to 1.74 tonnes)</td>
+          <td class="text-center">LPG</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class II (0.305 to 1.74 tonnes)</td>
+          <td class="text-center">Unknown</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class III (1.74 to 3.5 tonnes)</td>
+          <td class="text-center">Diesel</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.265</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class III (1.74 to 3.5 tonnes)</td>
+          <td class="text-center">Petrol</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.313</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class III (1.74 to 3.5 tonnes)</td>
+          <td class="text-center">CNG</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class III (1.74 to 3.5 tonnes)</td>
+          <td class="text-center">LPG</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Class III (1.74 to 3.5 tonnes)</td>
+          <td class="text-center">Unknown</td>
+          <td class="text-center">km</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Average (upto 3.5 tonnes)</td>
+          <td class="text-center">Diesel</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.241</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Delivery vehicle</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Average (upto 3.5 tonnes)</td>
+          <td class="text-center">Petrol</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.210</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Average (upto 3.5 tonnes)</td>
+          <td class="text-center">CNG</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.245</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Average (upto 3.5 tonnes)</td>
+          <td class="text-center">LPG</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.270</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">Vans</td>
+          <td class="text-center">Average (upto 3.5 tonnes)</td>
+          <td class="text-center">Unknown</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.240</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGV (alldiesel)</td>
+          <td class="text-center">Rigid (>3.5 - 7.5 tonnes)</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.481</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGV (alldiesel)</td>
+          <td class="text-center">Rigid (>7.5 tonnes-17 tonnes)</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.587</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGV (alldiesel)</td>
+          <td class="text-center">Rigid (>17 tonnes)</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.958</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGV (alldiesel)</td>
+          <td class="text-center">All rigids</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.803</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>  
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGV (alldiesel)</td>
+          <td class="text-center">Artkulated (>3.5·33t)</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.770</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>  
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGV (alldiesel)</td>
+          <td class="text-center">Artkulated (>33t)</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.916</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>  
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGV (alldiesel)</td>
+          <td class="text-center">All artics</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.910</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>  
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGV (alldiesel)</td>
+          <td class="text-center">All HGVs</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.864</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>  
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGVs refrigerated (alldiesel)</td>
+          <td class="text-center">Rigid (>3.5 • 7.5 tonnes)</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.572</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>  
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGVs refrigerated (alldiesel)</td>
+          <td class="text-center">Rigid (>7.5 tonnes-17 tonnes)</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.699</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>  
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGVs refrigerated (alldiesel)</td>
+          <td class="text-center">Rigid (>17 tonnes)</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">1.140</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>  
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGVs refrigerated (alldiesel)</td>
+          <td class="text-center">All rigids</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.956</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr> 
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGVs refrigerated (alldiesel)</td>
+          <td class="text-center">Artkulated (>3.5·33t)</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">0.890</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>  
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGVs refrigerated (alldiesel)</td>
+          <td class="text-center">Artkulated (>33t)</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">1.060</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>  
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGVs refrigerated (alldiesel)</td>
+          <td class="text-center">All artics</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">1.053</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>  
+        <tr>
+          <td class="text-center">Deliveryvehicle-s</td>
+          <td class="text-center">HGVs refrigerated (alldiesel)</td>
+          <td class="text-center">All HGVs</td>
+          <td class="text-center">Average laden</td>
+          <td class="text-center">km</td>
+          <td class="text-center">1.012</td>
+          <td class="text-center"></td>
+          <td class="text-center"><input type="text" value=""></td>
+          <td class="text-center"></td>
+        </tr>
+
+
+        <tr class="total-row">
+          <td class="text-right" colspan="8">Total:</td>
+          <td class="text-center total-co2-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="d-grid gap-4 d-sm-flex justify-content-sm-center mb-5" style="display: flex; justify-content: center;">
+    <a href="./select.html"><button type="button" class="btn btn-outline-secondary" style="margin-top: 30px;">Back</button></a>
+    <a href="./select.html"><button type="button" class="btn btn-outline-secondary" style="margin-top: 30px;">Next</button></a>
+  </div>
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">GHG Emission Calculator</a></li>
+        <li class="nav-item"><a href="./disclaimer.html" class="nav-link px-2 text-body-secondary">Disclaimer</a></li>
+        <li class="nav-item"><a href="./Sources.html" class="nav-link px-2 text-body-secondary">Source</a></li>
+        <li class="nav-item"><a href="./report.html" class="nav-link px-2 text-body-secondary">Report</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+    </footer>
+  </div>
+
+  <script>
+    // Get the input elements
+    const factorFuelCells = document.querySelectorAll('tbody td:nth-child(6)');
+    const distanceInputs = document.querySelectorAll('tbody td:nth-child(8) input');
+    const kgCO2Outputs = document.querySelectorAll('tbody td:nth-child(9)');
+    const totalCO2Cell = document.querySelector('.total-row td:nth-child(9)');
+  
+    // Function to calculate CO2 based on Factor Fuel and Distance
+    function calculateCO2() {
+      let totalCO2 = 0;
+  
+      for (let i = 0; i < distanceInputs.length; i++) {
+        const factorFuel = parseFloat(factorFuelCells[i].textContent);
+        const distance = parseFloat(distanceInputs[i].value);
+        let kgCO2 = (factorFuel * distance).toFixed(4);
+  
+        if (isNaN(kgCO2)) {
+          kgCO2 = 0;
+        } else {
+          kgCO2 = parseFloat(kgCO2);
+        }
+  
+        kgCO2Outputs[i].textContent = kgCO2;
+        totalCO2 += kgCO2;
+      }
+  
+      totalCO2Cell.textContent = totalCO2.toFixed(4);
+    }
+  
+    // Add event listeners to the distance input elements
+    distanceInputs.forEach((input) => {
+      input.addEventListener('input', calculateCO2);
+    });
+  
+    // Calculate the total CO2 on page load
+    calculateCO2();
+  </script>
+  
+  
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

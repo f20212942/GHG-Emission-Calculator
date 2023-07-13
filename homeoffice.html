@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme=dark>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/pic1.png">
+    <title>Home Office</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./img/pic1.png" alt="GHG Emission Report" height="30" style="padding-left: 10px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">GHG Emission Calculator</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./disclaimer.html">Disclaimer</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./Sources.html">Sources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./report.html">Report</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <h1>Home Office</h1>
+
+      <div style="display: flex; flex-direction: column; align-items: center; margin: 3% 3% 3% 3%;">
+        <p>
+          The emission factor consider the energy consumption of the workstation, lighting, and cooling or heating.
+          <p>
+            Find further comments on the cell's title
+          </p>
+          <p>
+            Assumptions:
+            <li>
+              48 (working weeks) * 5 days per week = 240 working days per year.
+            </li>
+            <li>
+              240 (days/year) * 8 hours = 1920 working hours per year.
+            </li>
+            <li>
+              (1920 Working Hours / 12) * 5 days per week = 160 working hours per month.
+            </li>
+          </p>
+        </p>
+      </div>
+
+<div class="container" style="display: flex; justify-content: center; margin-top: 20px;">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="10" class="text-center">Please enter the amount for each applicable fuels</th>
+          </tr>
+          <tr>
+            <th>Type of home office</th>
+            <th>Country</th>
+            <th>Units</th>
+            <th>Consumption kWh/hour</th>
+            <th>Factors</th>
+            <th>Number of employees</th>
+            <th>Working regime (For full-time : 100%)</th>
+            <th>%working from home (e.g. 50% from home)</th>
+            <th>Number of months</th>
+            <th>kg CO2e</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td class="text-center">kWh</td>
+            <td class="text-right"></td> 
+            <td class="text-right"></td> 
+            <td class="text-right"><input type="text" value=""></td>
+            <td class="text-right"><input type="text" value=""></td>
+            <td class="text-right"><input type="text" value=""></td>
+            <td class="text-right"><input type="text" value=""></td>
+            <td class="text-right"></td>  
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="d-grid gap-4 d-sm-flex justify-content-sm-center mb-5" style="display: flex; justify-content: center;">
+        <a href="./select.html"><button type="button" class="btn btn-outline-secondary" style="margin-top: 30px;">Back</a></button>
+        <a href="./select.html"><button type="button" class="btn btn-outline-secondary" style="margin-top: 30px;">Next</a></button>
+      </div>
+
+    
+
+
+      <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">GHG Emission Calculator</a></li>
+              <li class="nav-item"><a href="./disclaimer.html" class="nav-link px-2 text-body-secondary">Disclaimer</a></li>
+              <li class="nav-item"><a href="./Sources.html" class="nav-link px-2 text-body-secondary">Source</a></li>
+              <li class="nav-item"><a href="./report.html" class="nav-link px-2 text-body-secondary">Report</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+          </footer>
+      </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
